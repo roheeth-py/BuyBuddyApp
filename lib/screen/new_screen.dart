@@ -26,7 +26,7 @@ class _NewScreenState extends State<NewScreen> {
         _formKey.currentState!.save();
         final url = Uri.https(
           "grocery-app-cf51e-default-rtdb.firebaseio.com",
-          "smirthi-list.json",
+          "roheeth-list.json",
         );
 
         final response = await http.post(
