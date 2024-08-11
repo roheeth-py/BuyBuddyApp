@@ -31,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
     displayList.remove(item);
 
     final url =  Uri.https(
-        "grocery-app-cf51e-default-rtdb.firebaseio.com", "smirthi-list/${item.id}.json");
+        "grocery-app-cf51e-default-rtdb.firebaseio.com", "roheeth-list/${item.id}.json");
     final response = await http.delete(url);
 
     if(response.statusCode>=400){
@@ -43,7 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
     List<GroceryItem> lis = [];
     try{
       final url = Uri.https(
-          "grocery-app-cf51e-default-rtdb.firebaseio.com", "smirthi-list.json");
+          "grocery-app-cf51e-default-rtdb.firebaseio.com", "roheeth-list.json");
 
       final response = await http.get(
         url,
